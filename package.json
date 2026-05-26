@@ -1,0 +1,22 @@
+{
+  "name": "thiranex-login-app",
+  "version": "1.0.0",
+  "description": "Secure login web app with registration, hashed passwords, session management, and optional 2FA.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "connect-sqlite3": "^0.9.0",
+    "ejs": "^3.1.10",
+    "express": "^4.18.4",
+    "express-session": "^1.17.4",
+    "helmet": "^7.0.0",
+    "qrcode": "^1.5.1",
+    "speakeasy": "^2.0.0",
+    "sqlite": "^4.1.0",
+    "sqlite3": "^5.1.6"
+  }
+}

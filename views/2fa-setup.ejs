@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enable 2FA | Thiranex</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Enable Two-Factor Authentication</h1>
+    <p>Scan this QR code with your authenticator app and enter the generated code below.</p>
+    <img src="<%= qrData %>" alt="2FA QR code" style="width:100%; max-width:300px; display:block; margin-bottom:16px;" />
+    <form action="/2fa-setup" method="post">
+      <label for="token">Authenticator code</label>
+      <input type="text" id="token" name="token" maxlength="8" required />
+      <button type="submit">Enable 2FA</button>
+    </form>
+    <p><a href="/dashboard">Back to dashboard</a></p>
+  </div>
+</body>
+</html>

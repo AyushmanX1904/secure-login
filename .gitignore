@@ -1,0 +1,6 @@
+node_modules/
+*.db
+sessions.db
+auth.db
+npm-debug.log
+.DS_Store
