@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: thiranex-login
+    env: node
+    plan: free
+    branch: master
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
